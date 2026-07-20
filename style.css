@@ -536,9 +536,9 @@ body{
 
 .offer-price{
     color:#2E7D32;
-    font-size:46px;
-    margin:12px 0;
-    font-weight:800;
+    font-size:36px;
+    margin:10px 0;
+    font-weight:700;
 }
 
 .save-tag{
@@ -667,12 +667,12 @@ footer{
    STICKY BUY BAR
 =========================== */
 
-..sticky-buy{
+.sticky-buy{
     position:fixed;
     bottom:0;
     left:0;
     width:100%;
-    background:#:#fff;
+    background:#fff;
     padding:12px 20px;
     display:flex;
     justify-content:space-between;
@@ -726,7 +726,7 @@ footer{
 }
 
 .offer-price{
-    font-size:40px;
+    font-size:30px;
 }
 
 .sticky-buy{
