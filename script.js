@@ -218,5 +218,7 @@ function updateTimer() {
     timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
 }
 
-updateTimer();
-setInterval(updateTimer, 1000);
+if (timer) {
+    updateTimer();
+    setInterval(updateTimer, 1000);
+}
