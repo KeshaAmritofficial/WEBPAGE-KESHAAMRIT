@@ -894,7 +894,7 @@ cursor:pointer;
 
 .video-overlay{
     position:absolute;
-    bottom:40px;
+    bottom:80px;
     left:50%;
     transform:translateX(-50%);
     background:#ff9800;
