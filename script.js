@@ -203,22 +203,26 @@ if (orders) {
 }
 const timer = document.getElementById("timer");
 
-function updateTimer() {
-    const now = new Date();
-    const end = new Date();
-
-    end.setHours(23, 59, 59, 999);
-
-    const diff = end - now;
-
-    const hours = Math.floor(diff / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-}
-
 if (timer) {
+    function updateTimer() {
+        const now = new Date();
+        const end = new Date();
+
+        end.setHours(23, 59, 59, 999);
+
+        const diff = end - now;
+
+        if (diff > 0) {
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            timer.textContent = `${hours}h ${minutes}m ${seconds}s`;
+        } else {
+            timer.textContent = "Expired";
+        }
+    }
+
     updateTimer();
     setInterval(updateTimer, 1000);
 }
