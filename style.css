@@ -863,3 +863,44 @@ cursor:pointer;
     font-weight:600;
     text-align:center;
 }
+.live-viewers{
+    background:#e8f5e9;
+    color:#1b5e20;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:600;
+    margin:12px 0;
+}
+.stock-box{
+    background:#fff3cd;
+    color:#b71c1c;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+    margin:15px 0;
+    border:2px solid #ffc107;
+}
+.hero-video{
+    position:relative;
+}
+
+.video-overlay{
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ff9800;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:40px;
+    font-weight:700;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:translateX(-50%) scale(1);}
+50%{transform:translateX(-50%) scale(1.08);}
+100%{transform:translateX(-50%) scale(1);}
+}
