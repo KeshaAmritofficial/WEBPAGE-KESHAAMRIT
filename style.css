@@ -853,3 +853,13 @@ cursor:pointer;
     top:0;
     z-index:9999;
 }
+.free-gift{
+    background:#fff8e1;
+    color:#1b5e20;
+    border:2px dashed #d4af37;
+    padding:10px 15px;
+    border-radius:12px;
+    margin:15px 0;
+    font-weight:600;
+    text-align:center;
+}
