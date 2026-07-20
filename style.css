@@ -884,6 +884,8 @@ cursor:pointer;
 }
 .hero-video{
     position:relative;
+    overflow:hidden;
+    border-radius:20px;
 }
 
 .video-overlay{
@@ -895,7 +897,10 @@ cursor:pointer;
     color:#fff;
     padding:10px 22px;
     border-radius:40px;
+    font-size:16px;
     font-weight:700;
+    white-space:nowrap;
+    z-index:100;
     animation:pulse 1.5s infinite;
 }
 
