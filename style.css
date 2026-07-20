@@ -514,18 +514,25 @@ body{
 
 .badge{
     position:absolute;
-    top:-12px;
-    left:20px;
-    background:#ff5722;
+    top:-2px;
+    left:18px;
     color:#fff;
-    padding:8px 14px;
-    border-radius:30px;
+    padding:8px 18px;
+    border-radius:0 0 18px 18px;
     font-size:13px;
     font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    z-index:5;
 }
 
 .green{
-    background:#2E7D32;
+    background:linear-gradient(135deg,#2E7D32,#43A047);
+}
+
+.orange{
+    background:linear-gradient(135deg,#ff9800,#ffb300);
 }
 
 .orange{
