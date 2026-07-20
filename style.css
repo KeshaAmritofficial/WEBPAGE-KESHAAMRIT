@@ -908,12 +908,7 @@ cursor:pointer;
     z-index:100;
     animation:pulse 1.5s infinite;
 }
-.video-overlay{
-    position:absolute;
-    top:72%;
-    left:50%;
-    transform:translateX(-50%);
-}
+
 @keyframes pulse{
 0%{transform:translateX(-50%) scale(1);}
 50%{transform:translateX(-50%) scale(1.08);}
