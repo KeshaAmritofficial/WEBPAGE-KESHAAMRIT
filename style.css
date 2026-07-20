@@ -894,21 +894,27 @@ cursor:pointer;
 
 .video-overlay{
     position:absolute;
-    bottom:50px;
-    left:50%;
-    transform:translateX(-50%);
-    background:#ff9800;
+    bottom:42px;
+    right:12px;
+    left:auto;
+    transform:none;
+
+    background:rgba(255,152,0,.95);
     color:#fff;
-    padding:10px 24px;
-    border-radius:25px;
-    font-size:15px;
-    font-weight:600;
-    line-height:1.2;
+
+    padding:4px 10px;
+    font-size:11px;
+    font-weight:700;
+    line-height:1;
+
+    border-radius:18px;
     white-space:nowrap;
-    z-index:100;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+    z-index:999;
+
     animation:pulse 1.5s infinite;
 }
-
 @keyframes pulse{
 0%{transform:translateX(-50%) scale(1);}
 50%{transform:translateX(-50%) scale(1.08);}
