@@ -226,3 +226,25 @@ if (timer) {
     updateTimer();
     setInterval(updateTimer, 1000);
 }
+const viewers = document.getElementById("viewers");
+
+if(viewers){
+    let count = 7;
+
+    setInterval(()=>{
+        count = Math.floor(Math.random()*6)+5; // 5-10
+        viewers.textContent = count;
+    },8000);
+}
+const stock=document.getElementById("stock");
+
+if(stock){
+    let qty=18;
+
+    setInterval(()=>{
+        if(qty>8){
+            qty--;
+            stock.textContent=qty;
+        }
+    },60000);
+}
