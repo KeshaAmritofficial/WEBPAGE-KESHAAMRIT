@@ -1,578 +1,865 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ===========================
+   RESET
+=========================== */
 
-<head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+html{
+    scroll-behavior:smooth;
+}
 
-    <title>KeshaAmrit Ayurvedic Hair Oil</title>
-<meta name="description"
-content="KeshaAmrit Ayurvedic Hair Oil with 18 Powerful Herbs. Helps reduce hair fall, promote healthy hair growth and nourish your scalp naturally.">
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fff8;
+    color:#333;
+    overflow-x:hidden;
+}
 
-<meta name="keywords"
-content="Ayurvedic Hair Oil, Hair Growth Oil, Hair Fall Solution, KeshaAmrit, Herbal Hair Oil">
+/* ===========================
+   HEADER
+=========================== */
 
-<meta name="author" content="KeshaAmrit">
+.header{
 
-<meta name="robots" content="index,follow">
+    width:100%;
 
-<meta name="theme-color" content="#1B5E20">
-<meta property="og:title"
-content="KeshaAmrit Ayurvedic Hair Oil">
+    padding:30px 20px;
 
-<meta property="og:description"
-content="100% Ayurvedic Hair Oil with 18 Powerful Herbs.">
+    text-align:center;
 
-<meta property="og:image"
-content="https://i.postimg.cc/02JNDXcT/front-(1).jpg">
+    background:linear-gradient(180deg,#1B5E20,#2E7D32);
 
-<meta property="og:type"
-content="website">
-    <meta name="description"
-        content="100% Ayurvedic Hair Oil with 18 Powerful Herbs. Helps reduce hair fall, promotes healthy hair growth, and nourishes the scalp naturally.">
+    color:#fff;
 
-    <meta name="keywords"
-        content="Hair Oil, Ayurvedic Hair Oil, Hair Growth Oil, Hair Fall Solution, KeshaAmrit">
+}
 
-    <meta name="theme-color" content="#1B5E20">
+.logo{
 
-    <link rel="stylesheet" href="style.css"><link rel="icon"
-href="https://i.postimg.cc/d39cjdZG/Logo.jpg">
+    width:220px;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    border-radius:20px;
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    margin-bottom:20px;
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+}
+.logo{
+    width:270px;
+    background:#fffdf7;
+    padding:18px;
+    border-radius:28px;
+    border:3px solid #d4af37;
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+    transition:.3s ease;
+}
 
-</head>
+.logo:hover{
+    transform:scale(1.05);
+    box-shadow:0 18px 40px rgba(0,0,0,.30);
+}
 
-<body>
+.tagline{
 
-<!-- ================= HEADER ================= -->
+    font-size:20px;
 
-<header class="header">
+    font-weight:600;
 
-    <img src="https://i.postimg.cc/d39cjdZG/Logo.jpg"
-         alt="KeshaAmrit Logo"
-         class="logo">
+    margin-bottom:25px;
 
-    <p class="tagline">
+}
 
-        ⭐ Trusted By 1000 Of Customers⭐ 
-    </p>
+.badges{
 
-    <div class="badges">
+    display:flex;
 
-        <span>🌿<br>18 Herbs</span>
+    justify-content:center;
 
-        <span>💚<br>100% Ayurvedic</span>
+    flex-wrap:wrap;
 
-        <span>✅<br>Mineral Oil Free</span>
+    gap:15px;
 
-        <span>🚚<br>Free Shipping</span>
+}
 
-    </div>
+.badges span{
 
-</header>
-<!-- ================= HERO SECTION ================= -->
+    background:#ffffff;
 
-<section class="hero">
+    color:#1B5E20;
 
-    <div class="hero-text">
+    padding:12px 18px;
 
-        <span class="offer-tag">
-            🔥 Limited Time Offer
-        </span>
-<div class="live-orders">
-🔥 <span id="orders">27</span> Customers Ordered Today
-</div>
-        <h1>
-            Grow Strong, Healthy & Beautiful Hair Naturally
-        </h1>
+    border-radius:12px;
 
-        <p>
+    font-size:14px;
 
-            KeshaAmrit is a premium Ayurvedic Hair Oil made with
-            <strong>18 Powerful Herbs</strong> that help reduce hair fall,
-            promote healthy hair growth and nourish your scalp naturally.
+    font-weight:600;
 
-        </p>
+    min-width:110px;
 
-        <div class="hero-price">
+}
 
-            <span class="mrp">
-                MRP <del>₹399</del>
-            </span>
+/* ===========================
+   HERO
+=========================== */
 
-            <h2>₹299</h2>
-<div class="delivery-box">
+.hero{
 
-📦 Delivery in 3–7 Working Days
+    display:flex;
 
-</div>
-            <small>
-                🚚 Free Shipping | 💳 Cash on Delivery
-            </small>
+    align-items:center;
 
-        </div>
-<div class="offer-timer">
-    ⏰ Offer Ends In
-    <span id="timer"></span>
-</div>
+    justify-content:center;
 
-<p class="free-gift">
-    🎁 Buy 2 or More & Get <strong>FREE Premium Hair Comb</strong>
-</p>
+    gap:50px;
 
-<a href="https://wa.me/919496739361?text=Hi%20I%20want%20to%20order%20KeshaAmrit%20100ml%20Hair%20Oil"
-   class="main-btn"
-   target="_blank">
-    🛒 Order Now on WhatsApp
-</a>
+    padding:70px 30px;
 
-    </div>
+    flex-wrap:wrap;
 
-    <div class="hero-image">
-<a href="https://wa.me/919496739361?text=Hi%20I%20want%20to%20order%20KeshaAmrit%20Hair%20Oil"
-   target="_blank"
-   class="video-link">
+}
 
-    <a href="https://wa.me/919496739361?text=Hi%20I%20want%20to%20order%20KeshaAmrit%20Hair%20Oil"
-   target="_blank"
-   class="video-link">
+.hero-text{
 
-    <div class="hero-video">
-        <video autoplay muted loop playsinline>
-            <source src="20260720_152850165.mp4" type="video/mp4">
-        </video>
-    </div>
+    flex:1;
 
-</a>
-        <div class="slider">
+    min-width:320px;
 
-            <div class="slides">
+}
 
-                <img src="https://i.postimg.cc/02JNDXcT/front-(1).jpg"
-                     class="slide active"
-                     alt="Front Bottle">
+.offer-tag{
 
-                <img src="https://i.postimg.cc/wvG6sDJ0/back.jpg"
-                     class="slide"
-                     alt="Back Bottle">
+    display:inline-block;
 
-                <img src="https://i.postimg.cc/TwwdwtKt/ingredients1.jpg"
-                     class="slide"
-                     alt="Ingredients">
+    background:#ff5722;
 
-            </div>
+    color:#fff;
 
-            <button class="prev">
-                &#10094;
-            </button>
+    padding:8px 18px;
 
-            <button class="next">
-                &#10095;
-            </button>
+    border-radius:30px;
 
-        </div>
+    margin-bottom:20px;
 
-    </div>
+    font-weight:700;
 
-</section>
-<!-- ================= WHY CHOOSE KESHAAMRIT ================= -->
+}
 
-<section class="benefits">
+.hero h1{
 
-    <div class="section-title">
+    font-size:44px;
 
-        <h2>🌿 Why Choose KeshaAmrit?</h2>
+    line-height:1.3;
 
-        <p>
-            A powerful Ayurvedic formula designed to nourish your hair from the roots.
-        </p>
+    color:#1B5E20;
 
-    </div>
+    margin-bottom:20px;
 
-    <div class="benefits-grid">
+}
 
-        <div class="benefit-card">
+.hero p{
 
-            <div class="icon">🌿</div>
+    font-size:18px;
 
-            <h3>Stops Hair Fall</h3>
+    line-height:1.8;
 
-            <p>
-                Strengthens weak hair roots and helps reduce excessive hair fall naturally.
-            </p>
+    margin-bottom:25px;
 
-        </div>
+}
 
-        <div class="benefit-card">
+.hero-price{
 
-            <div class="icon">🌱</div>
+    margin-bottom:25px;
 
-            <h3>Promotes Hair Growth</h3>
+}
 
-            <p>
-                Supports healthy new hair growth with 18 powerful Ayurvedic herbs.
-            </p>
+.hero-price .mrp{
 
-        </div>
+    color:#777;
 
-        <div class="benefit-card">
+    font-size:18px;
 
-            <div class="icon">✨</div>
+}
 
-            <h3>Controls Dandruff</h3>
+.hero-price h2{
 
-            <p>
-                Keeps the scalp clean, healthy, and free from dandruff.
-            </p>
+    color:#2E7D32;
 
-        </div>
+    font-size:48px;
 
-        <div class="benefit-card">
+    margin:8px 0;
 
-            <div class="icon">💚</div>
+}
 
-            <h3>100% Ayurvedic</h3>
+.main-btn{
 
-            <p>
-                Made with natural herbal ingredients. No Mineral Oil. No Paraben.
-            </p>
+    display:inline-block;
 
-        </div>
+    background:linear-gradient(135deg,#FFD54F,#FFC107);
 
-        <div class="benefit-card">
+    color:#1B5E20;
 
-            <div class="icon">💆</div>
+    padding:18px 35px;
 
-            <h3>Deep Scalp Nourishment</h3>
+    border-radius:50px;
 
-            <p>
-                Improves scalp health and provides long-lasting nourishment.
-            </p>
+    text-decoration:none;
 
-        </div>
+    font-weight:700;
 
-        <div class="benefit-card">
+    font-size:18px;
 
-            <div class="icon">👨‍👩‍👧</div>
+    transition:.3s;
 
-            <h3>Suitable For Everyone</h3>
+}
 
-            <p>
-                Safe for both men and women. Suitable for all hair types.
-            </p>
+.main-btn:hover{
 
-        </div>
+    transform:translateY(-4px);
 
-    </div>
+}
+/* ===========================
+   IMAGE SLIDER
+=========================== */
 
-</section>
-<!-- ================= INGREDIENTS SECTION ================= -->
+.hero-image{
+    flex:1;
+    min-width:320px;
+}
 
-<section class="ingredients">
+.slider{
+    position:relative;
+    width:100%;
+    max-width:500px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
 
-    <div class="section-title">
+.slides{
+    position:relative;
+}
 
-        <h2>🌿 Powerful Herbal Ingredients</h2>
+.slide{
+    display:none;
+    width:100%;
+    border-radius:20px;
+}
 
-        <p>
-            Enriched with carefully selected Ayurvedic herbs for stronger, healthier and shinier hair.
-        </p>
+.slide.active{
+    display:block;
+}
 
-    </div>
+.prev,
+.next{
 
-    <div class="ingredients-grid">
+    position:absolute;
 
-        <div class="ingredient-card">
-            🌿
-            <h3>Bhringraj</h3>
-            <p>Promotes healthy hair growth and strengthens roots.</p>
-        </div>
+    top:50%;
 
-        <div class="ingredient-card">
-            🍋
-            <h3>Amla</h3>
-            <p>Rich in Vitamin C to nourish and strengthen hair.</p>
-        </div>
+    transform:translateY(-50%);
 
-        <div class="ingredient-card">
-            🌱
-            <h3>Neem</h3>
-            <p>Helps control dandruff and keeps the scalp healthy.</p>
-        </div>
+    width:45px;
+    height:45px;
 
-        <div class="ingredient-card">
-            🌺
-            <h3>Hibiscus</h3>
-            <p>Supports thicker, softer and healthier hair.</p>
-        </div>
+    border:none;
 
-        <div class="ingredient-card">
-            🌿
-            <h3>Aloe Vera</h3>
-            <p>Deeply moisturizes the scalp and reduces dryness.</p>
-        </div>
+    border-radius:50%;
 
-        <div class="ingredient-card">
-            🌾
-            <h3>Fenugreek</h3>
-            <p>Helps reduce hair fall and improves hair texture.</p>
-        </div>
+    background:rgba(0,0,0,.45);
 
-        <div class="ingredient-card">
-            🥥
-            <h3>Coconut Oil</h3>
-            <p>Provides deep nourishment and natural shine.</p>
-        </div>
+    color:#fff;
 
-        <div class="ingredient-card">
-            🌰
-            <h3>Sesame Oil</h3>
-            <p>Strengthens roots and protects hair from damage.</p>
-        </div>
+    cursor:pointer;
 
-    </div>
+    font-size:20px;
 
-</section>
-<!-- ================= PRICING SECTION ================= -->
+    transition:.3s;
 
-<section id="pricing" class="pricing-section">
+}
 
-    <div class="section-title">
+.prev{
+    left:15px;
+}
 
-        <h2>💚 Choose Your KeshaAmrit</h2>
+.next{
+    right:15px;
+}
 
-        <p>
-            Free Shipping • Cash On Delivery • Premium Ayurvedic Hair Oil
-        </p>
+.prev:hover,
+.next:hover{
 
-    </div>
+    background:#2E7D32;
 
-    <div class="pricing-container">
-<div class="price-card">
-       <!-- 100 ML -->
+}
+.hero-video{
+    width:100%;
+    max-width:350px;
+    margin:20px auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
 
-<div class="price-card">
+.hero-video video{
+    width:100%;
+    display:block;
+    border-radius:20px;
+}
+/* ===========================
+   COMMON TITLE
+=========================== */
 
-<h3>100 ml</h3>
-<p class="old-price">MRP <del>₹399</del></p>
-<h1 class="offer-price">₹299</h1>
+.section-title{
 
-<div class="save-tag">
-🔥 Save ₹100
-</div>
+    text-align:center;
 
-<ul>
-<li>✅ 18 Powerful Herbs</li>
-<li>✅ Free Shipping</li>
-<li>✅ Cash On Delivery</li>
-<li>✅ Mineral Oil Free</li>
-</ul>
+    margin-bottom:50px;
 
-<a href="https://wa.me/919496739361?text=Hi%20KeshaAmrit%20Team,%0AI%20want%20to%20order%20100ml%20Hair%20Oil%20(₹299)." class="buy-btn" target="_blank">
-    🛒 Buy Now
-</a>
-</div>
+}
 
-        <!-- 190 ML -->
-<div class="price-card featured">
-       <span class="badge green">MOST POPULAR</span>
+.section-title h2{
 
-<h3>2 × 100 ml</h3>
-<p class="old-price">MRP <del>₹798</del></p>
-<h1 class="offer-price">₹648</h1>
+    color:#1B5E20;
 
-<div class="save-tag">
-🔥 Save ₹150 + 🎁 Free Premium Comb
-</div>
+    font-size:36px;
 
-<ul>
-<li>🎁 Free Premium Comb</li>
-<li>🚚 Free Shipping</li>
-<li>💳 Cash On Delivery</li>
-<li>⭐ Best Value</li>
-</ul>
+    margin-bottom:12px;
 
-<a href="https://wa.me/919496739361?text=Hi%20KeshaAmrit%20Team,%0AI%20want%20to%20order%202%20x%20100ml%20Hair%20Oil%20(₹648)." class="buy-btn" target="_blank">
-    🛒 Buy Now
-</a>
-</div>
+}
 
-        <!-- COMBO -->
-<div class="price-card combo">
-        <span class="badge green">MOST POPULAR</span>
+.section-title p{
 
-<h3>3 × 100 ml</h3>
+    color:#666;
 
-<p class="old-price">
-    MRP <del>₹1197</del>
-</p>
+    font-size:17px;
 
-<h1 class="offer-price">₹947</h1>
+}
 
-<div class="save-tag">
-    🔥 Save ₹250 + 🎁 Free Premium Comb
-</div>
+/* ===========================
+   BENEFITS
+=========================== */
 
-<ul>
-<li>🎁 Free Premium Comb</li>
-<li>🚚 Free Shipping</li>
-<li>💳 Cash On Delivery</li>
-<li>⭐ Best Value</li>
-</ul>
+.benefits{
 
-<a href="https://wa.me/919496739361?text=Hi%20KeshaAmrit%20Team,%0AI%20want%20to%20order%203%20x%20100ml%20Hair%20Oil%20(₹947)." class="buy-btn" target="_blank">
-    🛒 Buy Now
-</a>
+    padding:80px 20px;
 
-</div>
+    background:#fff;
 
-    </div>
+}
 
-</section>
-<!-- ================= FAQ SECTION ================= -->
-<section class="trust-icons">
+.benefits-grid{
 
-<div>🚚 Free Shipping</div>
+    display:grid;
 
-<div>💳 Cash On Delivery</div>
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-<div>🔒 Secure Payment</div>
+    gap:25px;
 
-<div>🌿 100% Ayurvedic</div>
+}
 
-</section>
-<section class="faq">
+.benefit-card{
 
-    <div class="section-title">
+    background:#F8FFF8;
 
-        <h2>❓ Frequently Asked Questions</h2>
+    padding:30px;
 
-        <p>
-            Everything you need to know before ordering.
-        </p>
+    border-radius:18px;
 
-    </div>
+    text-align:center;
 
-    <details>
-        <summary>Is KeshaAmrit suitable for Men & Women?</summary>
-        <p>Yes. KeshaAmrit is suitable for both men and women.</p>
-    </details>
+    transition:.35s;
 
-    <details>
-        <summary>When can I expect results?</summary>
-        <p>Most users notice visible improvement within 30–60 days with regular use.</p>
-    </details>
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
-    <details>
-        <summary>Is this 100% Ayurvedic?</summary>
-        <p>Yes. It is prepared using carefully selected Ayurvedic herbs.</p>
-    </details>
+}
 
-    <details>
-        <summary>Do you provide Cash On Delivery?</summary>
-        <p>Yes. Cash On Delivery and Prepaid orders are available across India.</p>
-    </details>
+.benefit-card:hover{
 
-</section>
+    transform:translateY(-8px);
 
+}
 
-<!-- ================= CONTACT SECTION ================= -->
+.icon{
 
-<section class="contact-section">
+    font-size:42px;
 
-    <h2>📞 Contact Us</h2>
+    margin-bottom:18px;
 
-    <p>
+}
 
-        📱 WhatsApp :
-        <strong>9496739361</strong>
+.benefit-card h3{
 
-    </p>
+    color:#2E7D32;
 
-    <p>
+    margin-bottom:12px;
 
-        🚚 Free Shipping Across India
+}
 
-    </p>
+.benefit-card p{
 
-    <a href="https://wa.me/919496739361?text=Hi%20I%20want%20to%20order%20KeshaAmrit%20Hair%20Oil"
-       class="contact-btn"
-       target="_blank">
+    color:#555;
 
-        💬 Chat on WhatsApp
+    line-height:1.7;
 
-    </a>
+}
 
-</section>
+/* ===========================
+   INGREDIENTS
+=========================== */
 
+.ingredients{
 
-<!-- ================= FOOTER ================= -->
+    padding:80px 20px;
 
-<footer>
+    background:#EEF8EE;
 
-    <p>
+}
 
-        © 2026 KeshaAmrit Ayurvedic Hair Oil
+.ingredients-grid{
 
-    </p>
+    display:grid;
 
-    <small>
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-        Made with ❤️ in India
+    gap:22px;
 
-    </small>
+}
 
-</footer>
+.ingredient-card{
 
+    background:#fff;
 
-<!-- ================= FLOATING WHATSAPP ================= -->
+    border-radius:18px;
 
-<a href="https://wa.me/919496739361?text=Hi%20I%20want%20to%20order%20KeshaAmrit%20Hair%20Oil"
-   class="floating-whatsapp"
-   target="_blank">
+    padding:25px;
 
-    💬
+    text-align:center;
 
-</a>
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
+    transition:.35s;
 
-<!-- ================= STICKY BUY BAR ================= -->
+    font-size:34px;
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919496739361"
-   class="floating-whatsapp"
-   target="_blank">
-   💬
-</a>
+}
 
-<!-- Scroll To Top Button -->
-<button id="topBtn">
-    ⬆
-</button>
+.ingredient-card:hover{
 
-<!-- Sticky Buy -->
+    transform:translateY(-8px);
 
-<div class="sticky-buy">
+}
 
-    <div>
-        <small>Today Offer</small>
-        <h3>₹299</h3>
-    </div>
+.ingredient-card h3{
 
-    <a href="https://wa.me/919496739361" target="_blank">
-        🛒 Buy Now
-    </a>
+    margin:15px 0 10px;
 
-</div>
+    color:#1B5E20;
 
-<script src="script.js"></script>
+    font-size:22px;
 
-</body>
-</html>
+}
+
+.ingredient-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+}
+/* ===========================
+   PRICING SECTION
+=========================== */
+
+.pricing-section{
+    padding:80px 20px;
+    background:#ffffff;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.price-card{
+    position:relative;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    transition:.35s;
+    border:1px solid #E5E5E5;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.featured{
+    border:3px solid #2E7D32;
+}
+
+.badge{
+    position:absolute;
+    top:-12px;
+    left:20px;
+    background:#ff5722;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.green{
+    background:#2E7D32;
+}
+
+.orange{
+    background:#ff9800;
+}
+
+.old-price{
+    margin-top:20px;
+    color:#777;
+    font-size:18px;
+}
+
+.offer-price{
+    color:#2E7D32;
+    font-size:46px;
+    margin:12px 0;
+    font-weight:800;
+}
+
+.save-tag{
+    display:inline-block;
+    background:#E53935;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:25px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.price-card ul{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+    text-align:left;
+}
+
+.price-card ul li{
+    margin:12px 0;
+    font-size:16px;
+}
+
+.buy-btn{
+    display:inline-block;
+    width:100%;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    color:#fff;
+    padding:16px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:18px;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    transform:scale(1.03);
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq{
+    padding:80px 20px;
+    background:#F8FFF8;
+}
+
+.faq details{
+    max-width:850px;
+    margin:15px auto;
+    background:#fff;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.faq summary{
+    cursor:pointer;
+    font-weight:700;
+    color:#1B5E20;
+}
+
+.faq p{
+    margin-top:12px;
+    line-height:1.7;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-section{
+    text-align:center;
+    padding:70px 20px;
+    background:#ffffff;
+}
+
+.contact-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:16px 35px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#1B5E20;
+    color:#fff;
+    text-align:center;
+    padding:15px 15px 70px;
+}
+
+/* ===========================
+   FLOATING WHATSAPP
+=========================== */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:110px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:9999;
+}
+
+/* ===========================
+   STICKY BUY BAR
+=========================== */
+
+..sticky-buy{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#:#fff;
+    padding:12px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 -5px 15px rgba(0,0,0,.15);
+    z-index:9999;
+}
+
+.sticky-buy h3{
+    font-size:34px;
+    color:#2E7D32;
+    margin-top:2px;
+}
+
+.sticky-buy small{
+    font-size:14px;
+    color:#666;
+    font-weight:600;
+}
+
+.sticky-buy a{
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero{
+    padding:50px 20px;
+}
+
+.badges{
+    gap:10px;
+}
+
+.badges span{
+    min-width:90px;
+    font-size:12px;
+}
+
+.offer-price{
+    font-size:40px;
+}
+
+.sticky-buy{
+    padding:10px 15px;
+}
+
+.sticky-buy h3{
+    font-size:22px;
+}
+
+.sticky-buy a{
+    padding:12px 18px;
+    font-size:15px;
+}
+
+}
+.show{
+
+    animation:fadeUp .6s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+.trust-icons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding:35px;
+
+background:#F5FFF5;
+
+}
+
+.trust-icons div{
+
+background:#fff;
+
+padding:18px 25px;
+
+border-radius:12px;
+
+font-weight:600;
+
+box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+}
+.live-orders{
+
+display:inline-block;
+
+background:#ff5722;
+
+color:#fff;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-size:15px;
+
+margin-bottom:18px;
+
+animation:pulse 1.5s infinite;
+
+}
+#topBtn{
+
+position:fixed;
+
+right:20px;
+
+bottom:180px;
+
+display:none;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#1B5E20;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+.top-offer{
+    background:#d32f2f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-weight:700;
+    position:sticky;
+    top:0;
+    z-index:9999;
+}
+.free-gift{
+    background:#fff8e1;
+    color:#1b5e20;
+    border:2px dashed #d4af37;
+    padding:10px 15px;
+    border-radius:12px;
+    margin:15px 0;
+    font-weight:600;
+    text-align:center;
+}
