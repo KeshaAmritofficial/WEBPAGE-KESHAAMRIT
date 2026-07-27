@@ -820,25 +820,14 @@ ul{
 ==================================*/
 
 .price-card{
-
     position:relative;
-
-    background:#ffffff;
-
-    border:2px solid #E8E8E8;
-
-    border-radius:24px;
-
-    padding:35px 28px;
-
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
     text-align:center;
-
-    overflow:hidden;
-
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
     transition:.35s;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
+    border:2px solid #2E7D32;
 }
 
 .price-card:hover{
