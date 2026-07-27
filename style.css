@@ -989,3 +989,68 @@ cursor:pointer;
     font-size:20px;
     font-weight:700;
 }
+.pricing-card{
+    position:relative;
+    background:#fff;
+    border:3px solid #2e7d32;
+    border-radius:24px;
+    padding:35px 28px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.offer-tag{
+    position:absolute;
+    top:-15px;
+    left:20px;
+    background:#2e7d32;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:18px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.mrp span{
+    text-decoration:line-through;
+    color:#888;
+}
+
+.price{
+    font-size:56px;
+    font-weight:800;
+    color:#2e7d32;
+    margin:15px 0;
+}
+
+.save{
+    display:inline-block;
+    background:#e53935;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.features{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+    text-align:left;
+}
+
+.features li{
+    margin:12px 0;
+}
+
+.order-btn{
+    display:block;
+    width:100%;
+    background:linear-gradient(90deg,#2ecc71,#1b9e77);
+    color:#fff;
+    padding:16px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:700;
+}
