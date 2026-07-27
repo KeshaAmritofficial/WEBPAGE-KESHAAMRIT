@@ -951,3 +951,41 @@ cursor:pointer;
     font-size:24px;
     font-weight:800;
 }
+.launch-badge{
+    position:absolute;
+    top:-12px;
+    left:20px;
+    background:#2e7d32;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+}
+.mrp{
+    color:#777;
+    font-size:22px;
+    margin-top:10px;
+}
+
+.mrp span{
+    text-decoration:line-through;
+    color:#777;
+}
+.offer-price{
+    font-size:58px;
+    font-weight:800;
+    color:#2e7d32;
+    margin:15px 0;
+}
+.save-box{
+    display:inline-block;
+    background:#e53935;
+    color:#fff;
+    padding:12px 26px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:700;
+}
